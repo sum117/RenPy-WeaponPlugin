@@ -1,6 +1,5 @@
 # RenPy-Weapon-Displayable
 
-## Description
 A custom displayable for the Ren'Py Visual Novel Engine that provides an easy way to incorporate weapons and their associated animations and sound effects into your game. Perfect for adding interactivity and enhancing immersion in your visual novel projects.
 
 <p align="center">
