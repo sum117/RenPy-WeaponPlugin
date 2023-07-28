@@ -1,19 +1,22 @@
-# RenPy Weapon Plugin
+# RenPy-Weapon-Displayable
 
-The Weapon Plugin is an extension designed for the Ren'Py visual novel game engine. It enables developers to add an interactive weapon feature, including actions like shooting and reloading, to their games.
+## Description
+A custom displayable for the Ren'Py Visual Novel Engine that provides an easy way to incorporate weapons and their associated animations and sound effects into your game. Perfect for adding interactivity and enhancing immersion in your visual novel projects.
 
-![Example](example.gif)
+<p align="center">
+  <img src="example.gif" alt="animated" />
+</p>
 
 ## Features
-
-* Weapon state control (shooting, reloading)
-* Customizable sound effects for shooting and reloading actions
-* Easily integrable with other game systems
+- Custom displayable that allows for different weapon states
+- Easy to integrate shooting and reloading animations with sound effects
+- State sharing capability across different screens
+- Customizable according to specific weapon characteristics
 
 ## Usage
+Simply create an instance of the `Weapon` class, specifying the displayables for the static, shooting, and reloading states of the weapon, along with sound effects.
 
-To use this plugin, you need to create an instance of the `Weapon` class and add it to your screen:
-
+Example:
 ```python
 screen gun_screen:
     add Weapon(
@@ -22,18 +25,21 @@ screen gun_screen:
         reloading_displayables=["shotgun_reloading1.png","shotgun_reloading2.png", "shotgun_reloading3.png", "shotgun_reloading4.png"], 
         shooting_sfx="<from 3.7 to 5.3>sfx_shotgun.opus", 
         reloading_sfx="<from 1.7 to 2.6>sfx_shotgun.opus"
-    )
+        )
 ```
 
-The parameters for the `Weapon` class are:
+## Installation
 
-* `static_displayable`: The default image of the weapon
-* `shooting_displayables`: A list of images displayed when the weapon is shooting
-* `reloading_displayables`: A list of images displayed when the weapon is reloading
-* `shooting_state`: Initial shooting state (optional)
-* `reloading_state`: Initial reloading state (optional)
-* `shooting_sfx`: The sound effect for shooting (optional)
-* `reloading_sfx`: The sound effect for reloading (optional)
+To install the `Weapon` class for use in your Ren'Py game, simply copy the `weapon.rpy` file into the `/game` directory of your project.
+
+Here's the file structure you should have:
+
+```
+/game
+├── weapon.rpy
+├── script.rpy
+└── options.rpy
+```
 
 ## Contribution
 
@@ -41,4 +47,5 @@ Contributions are welcomed! If you find a bug or have a feature suggestion, plea
 
 ## License
 
-This project is under the [MIT](LICENSE) license.
+This project is under the MIT license.
+
