@@ -23,8 +23,8 @@ screen gun_screen:
         shooting_displayables=["shotgun_shooting.png"], 
         reloading_displayables=["shotgun_reloading1.png","shotgun_reloading2.png", "shotgun_reloading3.png", "shotgun_reloading4.png"], 
         shooting_sfx="<from 3.7 to 5.3>sfx_shotgun.opus", 
-        reloading_sfx="<from 1.7 to 2.6>sfx_shotgun.opus"
-        reloading_state=False # Can be useful to prevent damage to enemies during reload.
+        reloading_sfx="<from 1.7 to 2.6>sfx_shotgun.opus",
+        reloading_state=False, # Can be useful to prevent damage to enemies during reload.
         shooting_state=False # Can be useful to deal damage to enemies.
         )
 ```
